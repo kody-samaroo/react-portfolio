@@ -1,18 +1,40 @@
-import React from "react"
-import Bio from "./Bio"
-import Blog from "./Blog"
-import Project from "./Project"
+import React from "react";
+import { Switch, Route } from "react-router"
+import Navbar from "./Navbar";
+import Home from "./Home";
+import Bio from "./Bio";
+import Blogs from "./Blogs";
+import Projects from "./Projects";
+import Contact from "./Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+export default function App() {
   
   return (
-    <div className="app">
-          <Bio/>
-          <Blog/>
-          <Project/>
-    </div>
+    <>
+      <Switch>
+      <Navbar />
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route exact path="/bio">
+          <Bio />
+        </Route>
+
+        <Route exact path="/blogs">
+          <Blogs />
+        </Route>
+
+        <Route exact path="/projects">
+          <Projects />
+        </Route>
+
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+
+      </Switch>
+    </>
   );
 }
-
-export default App;

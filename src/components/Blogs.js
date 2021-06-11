@@ -1,10 +1,11 @@
 import React from "react"
 import { Carousel } from "react-bootstrap"
 
-function Blog() {
+export default function Blogs() {
 
     return (
         <div className="blog">
+            Blog Page
             <Carousel interval={5000}>
                 <Carousel.Item>
                     <a href="https://kodysamaroo.medium.com/javascript-how-to-compare-elements-in-an-array-6a52a7a04339">
@@ -48,5 +49,3 @@ function Blog() {
         </div>
     )
 }
-
-export default Blog;

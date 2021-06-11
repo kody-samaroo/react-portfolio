@@ -1,9 +1,10 @@
 import React from "react"
 
-function Bio() {
+export default function Bio() {
 
     return (
         <div className="bio">
+            Bio Page
             <p className="name"> Kody Samaroo </p>
             <p> <a href="https://github.com/jodycola">Github |</a> 
             <a href="https://www.linkedin.com/in/kody-samaroo/"> LinkedIn |</a>
@@ -14,5 +15,3 @@ function Bio() {
         </div>
     )
 }
-
-export default Bio;

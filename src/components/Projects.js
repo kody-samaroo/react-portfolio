@@ -1,6 +1,6 @@
 import React from "react"
 
-function Project() {
+export default function Projects() {
 
     return (
         <div className="project">
@@ -8,5 +8,3 @@ function Project() {
         </div>
     )
 }
-
-export default Project;
