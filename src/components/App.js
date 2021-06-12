@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
   
   return (
-    <>
+    <div className="app" style={{ backgroundColor: "#262626"}}>
       <Switch>
       <Navbar />
         <Route exact path="/">
@@ -35,6 +35,8 @@ export default function App() {
         </Route>
 
       </Switch>
-    </>
+
+      <Home/>
+    </div>
   );
 }
