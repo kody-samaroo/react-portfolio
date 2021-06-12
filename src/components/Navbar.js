@@ -12,7 +12,6 @@ export default function Navbar() {
             className="mobile-menu-icon"
             role="button"
             onClick={() => setShowNav(!showNav)}
-            onKeyDown={() => setShowNav(!showNav)}
         >
             <MdMenu />
         </div>
@@ -22,7 +21,6 @@ export default function Navbar() {
                 className="close-nav-icon"
                 role="button"
                 onClick={() => setShowNav(!showNav)}
-                onKeyDown={() => setShowNav(!showNav)}
             >
                 <MdClose />
             </div>
@@ -33,7 +31,6 @@ export default function Navbar() {
                     exact to="/"
                     role="button"
                     onClick={() => setShowNav(!showNav)}
-                    onKeyDown={() => setShowNav(!showNav)}
                 >
                     Home 
                 </NavLink> 
@@ -46,7 +43,6 @@ export default function Navbar() {
                     exact to="/bio"
                     role="button"
                     onClick={() => setShowNav(!showNav)}
-                    onKeyDown={() => setShowNav(!showNav)}
                 >
                     Bio 
                 </NavLink>
@@ -59,7 +55,6 @@ export default function Navbar() {
                     exact to="/blogs"
                     role="button"
                     onClick={() => setShowNav(!showNav)}
-                    onKeyDown={() => setShowNav(!showNav)}
                 > 
                     Blogs
                 </NavLink>
@@ -72,7 +67,6 @@ export default function Navbar() {
                     exact to="/projects"
                     role="button"
                     onClick={() => setShowNav(!showNav)}
-                    onKeyDown={() => setShowNav(!showNav)}
                 > 
                     Projects
                 </NavLink>
@@ -85,7 +79,6 @@ export default function Navbar() {
                     exact to="/contact"
                     role="button"
                     onClick={() => setShowNav(!showNav)}
-                    onKeyDown={() => setShowNav(!showNav)}
                 >
                     Contact
                 </NavLink>

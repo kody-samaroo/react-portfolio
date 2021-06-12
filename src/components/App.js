@@ -12,8 +12,8 @@ export default function App() {
   
   return (
     <div className="app" style={{ backgroundColor: "#262626"}}>
-      <Switch>
       <Navbar />
+      {/* <Switch>
         <Route exact path="/">
           <Home />
         </Route>
@@ -34,9 +34,10 @@ export default function App() {
           <Contact />
         </Route>
 
-      </Switch>
+      </Switch> */}
 
-      <Home/>
+      <Home />
+      <Blogs />
     </div>
   );
 }

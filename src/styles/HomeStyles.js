@@ -49,7 +49,8 @@ export const HomeStyles = styled.div`
     }
     .home-icons{
         display: flex;
-        width: 10%;
+        width: 30%;
+        max-width: 200px;
         margin: auto;
         .github-icon {
             margin-right: 5px;
@@ -65,9 +66,16 @@ export const HomeStyles = styled.div`
     .home-about {
         display: flex;
         background-color: var(--dark-bg);
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    .home-buttons {
+        display: block;
+        margin: auto;
+        width: 45%;
+        white-space: nowrap;
     }
 `;

@@ -1,8 +1,15 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaMediumM } from 'react-icons/fa'
+import resume from '../assets/resume.pdf';
+import { FaGithub, FaLinkedin, FaMediumM } from 'react-icons/fa';
 import { HomeStyles } from '../styles/HomeStyles';
+import { Button } from 'react-bootstrap';
 
 export default function Home() {
+
+    function viewResume(){
+        window.open(resume)
+    }
+
     return (
         <HomeStyles>
             <div className="home">
@@ -19,15 +26,15 @@ export default function Home() {
             <div className="home-icons">
                 <FaGithub 
                     className="github-icon"
-                    onClick={window.open('https://github.com/jodycola?tab=repositories')}
+                    onClick={() => window.open('https://github.com/jodycola?tab=repositories')}
                 />
                 <FaLinkedin 
                     className="linkedin-icon"
-                    onClick={window.open('https://www.linkedin.com/in/kody-samaroo/')}
+                    onClick={() => window.open('https://www.linkedin.com/in/kody-samaroo/')}
                 />
                 <FaMediumM 
                     className="medium-icon"
-                    onClick={window.open('https://kodysamaroo.medium.com/')}
+                    onClick={() => window.open('https://kodysamaroo.medium.com/')}
                 />
             </div>
 
@@ -36,7 +43,26 @@ export default function Home() {
             <br/>
 
             <div className="home-about">
-                Full stack software engineer with a background in informatics and big data.I am a passionate programmer looking to find simple solutions to solve complex problems. 
+                Full stack software engineer with a background in informatics and big data. I am a passionate programmer looking to find simple solutions to solve complex problems.
+            </div>
+
+            <br/>
+            <br/>
+
+            <div className="home-buttons">
+                <Button 
+                    className="m-2 w-50 btn-dark font-weight-bold"
+                    onClick={viewResume}
+                > View Resume 
+                </Button>
+
+                {/* Button doesn't work - Link to contact page */}
+                <Button 
+                    className="m-2 w-50 btn-light font-weight-bold"
+                > 
+                Read more 
+                </Button>
+
             </div>
 
         </HomeStyles>
