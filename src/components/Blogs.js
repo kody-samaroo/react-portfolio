@@ -30,7 +30,7 @@ export default function Blogs() {
             id: uniqid(),
             title: 'GitHub introudction',
             desc: 'An introduction to a couple helpful Git commands',
-            img: 'https://pbs.twimg.com/media/EOPWjS0XsAAqICb.jpg',
+            img: 'https://cdn.uconnectlabs.com/wp-content/uploads/sites/46/2019/04/GitHub-Mark.png',
             link: 'https://kodysamaroo.medium.com/git-it-together-45f354c6023'
         }
     ]
@@ -44,9 +44,6 @@ export default function Blogs() {
                     spaceBetween={30}
                     slidesPerView={1}
                     navigation
-                    breakpoints={{
-                    640: { slidesPerView: 1 }
-                    }}
                 >
                 {blogs.map((blog, index) => {
                     return (

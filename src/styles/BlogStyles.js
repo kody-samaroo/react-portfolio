@@ -18,16 +18,16 @@ export const BlogStyles = styled.div`
         }
     }
     .blog-item-img {
-        width: auto;
-        height: auto;
-        max-height: 500px;
+        max-height: 300px;
         max-width: 500px;
     }
+
     .blog-items {
         display: flex;
         gap: 3rem;
         margin-top: 5rem;
     }
+
     .swiper-container {
         padding-top: 8rem;
         text-align: center;
