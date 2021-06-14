@@ -1,29 +1,29 @@
 import styled from 'styled-components';
 
-export const BlogItemStyles = styled.div`
-    .blog-item-img {
+export const ProjectItemStyles = styled.div`
+    .project-item-img {
         width: 100%;
         height: 300px;
         border-radius: 12px;
         display: inline-block;
         border: 3px solid var(--white);
     }
-    .blog-item-info {
+    .project-item-info {
         margin-top: 1rem;
         background-color: var(--deep-dark);
         padding: 1rem;
         border-radius: 12px;
     }
-    .blog-item-title {
+    .project-item-title {
         font-size: 2.2rem;
     }
-    .blog-item-desc {
+    .project-item-desc {
         font-size: 1.6rem;
         font-family: 'Times New Roman';
         margin-top: 1rem;
     }
     @media only screen and (max-width: 768px) {
-        .blog-item-img, {
+        .project-item-img, {
             height: 350px;
         }
     }

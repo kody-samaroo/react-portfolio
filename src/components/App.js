@@ -37,7 +37,12 @@ export default function App() {
       </Switch> */}
 
       <Home />
+      <br/>
       <Blogs />
+      <br/>
+      <Projects />
+      <br/>
+      <Contact />
     </div>
   );
 }

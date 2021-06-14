@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const BlogStyles = styled.div`
+export const ProjectStyles = styled.div`
     padding: 1rem;
+    .projects {
+        display: block;
+        margin: auto;
+    }
     h2 {
         display: block;
         margin: auto;
@@ -16,8 +20,8 @@ export const BlogStyles = styled.div`
             font-size: 3.6rem;
         }
     }
-    .blog-item-img {
-        text-align: center;
+    .project-item-img {
+        text-align: center;;
         max-height: 300px;
         max-width: 500px;
     }
@@ -27,7 +31,7 @@ export const BlogStyles = styled.div`
         height: 100%;
     }
 
-    .blog-items {
+    .project-items {
         display: block;
         margin: auto;
         gap: 3rem;
@@ -58,7 +62,7 @@ export const BlogStyles = styled.div`
         font-size: 2rem;
     }
     @media only screen and (max-width: 768px) {
-        .blog-items {
+        .project-items {
             flex-direction: column;
             max-width: 400px;
             margin: 0 auto;

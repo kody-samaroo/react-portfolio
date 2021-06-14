@@ -73,9 +73,12 @@ export const HomeStyles = styled.div`
     }
 
     .home-buttons {
-        display: block;
-        margin: auto;
-        width: 45%;
+        text-align: center;
         white-space: nowrap;
+    }
+    button {
+        font-size: 2rem;
+        border-radius: 8px;
+        cursor: pointer;
     }
 `;
