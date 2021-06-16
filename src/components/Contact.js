@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MdEmail } from 'react-icons/md';
 import { Button } from 'react-bootstrap';
 import { ContactStyles } from '../styles/ContactStyles';
 
@@ -7,6 +6,31 @@ export default function Contact() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        fetch('/send', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, email, message })
+        })
+        .then(res => res.json())
+        .then(res => {
+            if ( res.status === 'Message Sent') {
+                alert('Message sent. Thank you!')
+                setName("")
+                setEmail("")
+                setMessage("")
+            } else if ( res.status === 'Error' ) {
+                alert('Message failed to send. Try again')
+            }
+        })
+    }
 
     return (
         <ContactStyles>
@@ -43,7 +67,12 @@ export default function Contact() {
                                 onChange={(e) => setMessage(e.target.value)}
                             />  
                         </div>
-                        <Button type="submit"> Send </Button>
+                        <Button 
+                            onClick={handleSubmit}
+                            className="btn-light btn-lg"
+                            type="submit"
+                        > Send 
+                        </Button>
                     </div>
                 </div>
             </div>

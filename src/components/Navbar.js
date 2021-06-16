@@ -4,7 +4,14 @@ import { NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 export default function Navbar() {
-    const [showNav, setShowNav] = useState(false)
+    const [showNav, setShowNav] = useState(true)
+
+    function scrollToSection(value) {
+        window.scrollTo({
+            top: value,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <NavStyles>
@@ -30,22 +37,10 @@ export default function Navbar() {
                     activeClassName="active" 
                     exact to="/"
                     role="button"
-                    onClick={() => setShowNav(!showNav)}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(0)}}
                 >
                     Home 
                 </NavLink> 
-            </li>
-
-            <li> 
-                <NavLink 
-                    className="inactive"
-                    activeClassName="active"
-                    exact to="/bio"
-                    role="button"
-                    onClick={() => setShowNav(!showNav)}
-                >
-                    Bio 
-                </NavLink>
             </li>
             
             <li> 
@@ -54,7 +49,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/blogs"
                     role="button"
-                    onClick={() => setShowNav(!showNav)}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(780) }}
                 > 
                     Blogs
                 </NavLink>
@@ -66,7 +61,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/projects"
                     role="button"
-                    onClick={() => setShowNav(!showNav)}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(1358) }}
                 > 
                     Projects
                 </NavLink>
@@ -78,7 +73,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/contact"
                     role="button"
-                    onClick={() => setShowNav(!showNav)}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(1972) }} 
                 >
                     Contact
                 </NavLink>

@@ -67,13 +67,8 @@ export const ContactStyles = styled.div`
         resize: vertical;
     }
     button[type='submit'] {
-        background-color: var(--gray-1);
-        color: var(--black);
         font-size: 2rem;
         display: inline-block;
-        outline: none;
-        border: none;
-        padding: 1rem 4rem;
         border-radius: 8px;
         cursor: pointer;
     }

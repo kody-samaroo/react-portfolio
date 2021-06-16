@@ -51,18 +51,10 @@ export default function Home() {
 
             <div className="home-buttons">
                 <Button 
-                    className="m-2 btn-dark btn-lg"
+                    className="btn-dark btn-lg"
                     onClick={downloadCV}
                 > Download CV 
                 </Button>
-
-                {/* Button doesn't work - Link to contact page */}
-                <Button 
-                    className="m-2 btn-light btn-lg"
-                > 
-                Read more 
-                </Button>
-
             </div>
 
         </HomeStyles>
