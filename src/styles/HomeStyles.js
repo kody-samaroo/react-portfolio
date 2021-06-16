@@ -73,6 +73,7 @@ export const HomeStyles = styled.div`
     }
 
     .home-buttons {
+
         text-align: center;
         white-space: nowrap;
     }

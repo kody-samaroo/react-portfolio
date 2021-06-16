@@ -33,7 +33,7 @@ router.post("/send", (req, res) => {
   const message = req.body.message; 
   const mail = {
     from: name,
-    to: "kodybusinessinquiries@gmail.com",
+    to: process.env.EMAIL,
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
