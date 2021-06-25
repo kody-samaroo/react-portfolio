@@ -14,6 +14,13 @@ export default function Blogs() {
     const blogs = [
         {
             id: uniqid(),
+            title: 'Big O Notation: Calculate Time & Space Complexity',
+            desc: 'Learn about big O notation and how to quickly implement in your next algorithm',
+            img: 'https://miro.medium.com/max/520/0*BbK1CWx3QoyJ0YPG.jpg',
+            link: 'https://kodysamaroo.medium.com/calculate-time-space-complexity-b516884823dc'
+        },
+        {
+            id: uniqid(),
             title: 'JavaScript - Compare array elements',
             desc: 'Learn to compare arrays and sort elements within them.',
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdYEka2IGBPAM9hbgoiBl_s-BEiCGLqICldE2jhPItbS-7gQ8or0IUkWX51g1RpedjQs&usqp=CAU',

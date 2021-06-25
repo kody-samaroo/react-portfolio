@@ -1,6 +1,7 @@
 import React from 'react';
 import resume from '../assets/resume.pdf';
-import { FaGithub, FaLinkedin, FaMediumM } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { AiFillMediumCircle } from 'react-icons/ai'
 import { HomeStyles } from '../styles/HomeStyles';
 import { Button } from 'react-bootstrap';
 
@@ -24,7 +25,7 @@ export default function Home() {
             </div>
 
             <div className="home-icons">
-                <FaGithub 
+                <FaGithub
                     className="github-icon"
                     onClick={() => window.open('https://github.com/jodycola?tab=repositories')}
                 />
@@ -32,7 +33,7 @@ export default function Home() {
                     className="linkedin-icon"
                     onClick={() => window.open('https://www.linkedin.com/in/kody-samaroo/')}
                 />
-                <FaMediumM 
+                <AiFillMediumCircle 
                     className="medium-icon"
                     onClick={() => window.open('https://kodysamaroo.medium.com/')}
                 />

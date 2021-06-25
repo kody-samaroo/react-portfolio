@@ -14,8 +14,8 @@ export const BlogItemStyles = styled.div`
         padding: 1rem;
         border-radius: 12px;
     }
-    .blog-item-title {
-        font-size: 2.2rem;
+    .blog-links {
+        font-size: 1.2rem;
     }
     .blog-item-desc {
         font-size: 1.6rem;

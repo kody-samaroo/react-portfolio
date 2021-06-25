@@ -55,11 +55,23 @@ export const HomeStyles = styled.div`
         .github-icon {
             margin-right: 5px;
         }
+        .github-icon:hover {
+            border: 3px solid var(--white);
+            border-radius: 50px;
+        }
         .linkedin-icon {
             margin-right: 5px;
         }
+        .linkedin-icon:hover {
+            border: 3px solid var(--white);
+            border-radius: 15px;
+        }
         .medium-icon {
             margin-right: 5px;
+        }
+        .medium-icon:hover {
+            border: 3px solid var(--white);
+            border-radius: 50px;
         }
     }
 

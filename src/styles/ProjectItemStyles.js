@@ -17,6 +17,10 @@ export const ProjectItemStyles = styled.div`
     .project-item-title {
         font-size: 2.2rem;
     }
+    .project-links {
+        width: 25px;
+        white-space: nowrap;
+    }
     .project-item-desc {
         font-size: 1.6rem;
         font-family: 'Times New Roman';
