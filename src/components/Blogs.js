@@ -14,6 +14,13 @@ export default function Blogs() {
     const blogs = [
         {
             id: uniqid(),
+            title: 'Java — Access Modifiers — Public, Private, Protected & Default',
+            desc: 'Use Access Modifiers in your next Java project or application to control data flow and regulate classes',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4FcuwK6Lj5OfL70Dcq_5OPOOd-h91d3nOg&usqp=CAU',
+            link: 'https://kodysamaroo.medium.com/java-access-modifiers-public-private-protected-default-38a71d0c1dd'
+        },
+        {
+            id: uniqid(),
             title: 'Big O Notation: Calculate Time & Space Complexity',
             desc: 'Learn about big O notation and how to quickly implement in your next algorithm',
             img: 'https://miro.medium.com/max/520/0*BbK1CWx3QoyJ0YPG.jpg',
