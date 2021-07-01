@@ -49,7 +49,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/blogs"
                     role="button"
-                    onClick={() => { setShowNav(!showNav); scrollToSection(780) }}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(650) }}
                 > 
                     Blogs
                 </NavLink>
@@ -61,7 +61,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/projects"
                     role="button"
-                    onClick={() => { setShowNav(!showNav); scrollToSection(1358) }}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(1200) }}
                 > 
                     Projects
                 </NavLink>
@@ -73,7 +73,7 @@ export default function Navbar() {
                     activeClassName="active"
                     exact to="/contact"
                     role="button"
-                    onClick={() => { setShowNav(!showNav); scrollToSection(1972) }} 
+                    onClick={() => { setShowNav(!showNav); scrollToSection(1850) }} 
                 >
                     Contact
                 </NavLink>

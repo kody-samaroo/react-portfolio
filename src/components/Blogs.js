@@ -16,7 +16,7 @@ export default function Blogs() {
             id: uniqid(),
             title: 'Java — Access Modifiers — Public, Private, Protected & Default',
             desc: 'Use Access Modifiers in your next Java project or application to control data flow and regulate classes',
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4FcuwK6Lj5OfL70Dcq_5OPOOd-h91d3nOg&usqp=CAU',
+            img: 'https://developers.redhat.com/sites/default/files/blog/2014/09/java-icon-240c2a0c397c2a0171.jpeg',
             link: 'https://kodysamaroo.medium.com/java-access-modifiers-public-private-protected-default-38a71d0c1dd'
         },
         {
@@ -52,7 +52,7 @@ export default function Blogs() {
     return (
         <BlogStyles>
         <div className="blogs">
-            <h2> Articles </h2>
+            <h2> Blogs </h2>
             <div className="blog-items">
                 <Swiper
                     spaceBetween={30}

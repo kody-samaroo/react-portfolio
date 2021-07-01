@@ -44,7 +44,8 @@ export default function Home() {
             <br/>
 
             <div className="home-about">
-                Full stack software engineer with a background in informatics and big data. I am a passionate programmer looking to find simple solutions to solve complex problems.
+                Full stack software engineer with a background in data analytics, informatics and big data. 
+                I am a passionate programmer looking to find simple solutions to solve complex problems.
             </div>
 
             <br/>
