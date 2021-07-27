@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeStyles = styled.div`
     .home {
-        background-color: var(--dark-bg);
+        background-color: ${props => !props.primary ? 'var(--dark-bg)' : 'var(--cream)'};
         position: relative;
         width: 100%;
         text-align: center;

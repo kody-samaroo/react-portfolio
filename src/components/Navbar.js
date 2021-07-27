@@ -3,7 +3,7 @@ import { NavStyles } from '../styles/NavStyles';
 import { NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 
-export default function Navbar() {
+export default function Navbar({ darkMode }) {
     const [showNav, setShowNav] = useState(true)
 
     function scrollToSection(value) {
@@ -14,7 +14,7 @@ export default function Navbar() {
     }
 
     return (
-        <NavStyles>
+        <NavStyles darkMode>
         <div 
             className="mobile-menu-icon"
             role="button"

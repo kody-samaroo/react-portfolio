@@ -7,7 +7,7 @@ export const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: ${darkMode => darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ export const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: ${darkMode => darkMode ? 'var(--dark-accent-1)' : 'var(--light-accent-1)'};
       }
     }
     a {
@@ -26,7 +26,7 @@ export const NavStyles = styled.nav`
       font-family: 'Georgia';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: ${darkMode => darkMode ? 'var(dark-text-1)' : 'var( --light-text-1)'};
       outline: none;
     }
     .active {
