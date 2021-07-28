@@ -1,10 +1,10 @@
 import React from 'react';
 import { BlogItemStyles } from '../styles/BlogItemStyles'
 
-export default function BlogItem({ title, img, desc, link }) {
+export default function BlogItem({ title, img, desc, link, darkMode }) {
 
     return (
-        <BlogItemStyles>
+        <BlogItemStyles darkMode={darkMode}>
             <a href={link}>
             <img className="blog-item-img" src={img} alt="blog-preview"/>
             </a>

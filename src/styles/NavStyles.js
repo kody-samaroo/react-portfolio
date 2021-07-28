@@ -7,7 +7,7 @@ export const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: ${darkMode => darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
+  background: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ export const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: ${darkMode => darkMode ? 'var(--dark-accent-1)' : 'var(--light-accent-1)'};
+        background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : '#0049FF'};
       }
     }
     a {
@@ -26,11 +26,11 @@ export const NavStyles = styled.nav`
       font-family: 'Georgia';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: ${darkMode => darkMode ? 'var(dark-text-1)' : 'var( --light-text-1)'};
+      color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};
     }
   }
   .mobile-menu-icon {
@@ -44,6 +44,13 @@ export const NavStyles = styled.nav`
     * {
       pointer-events: none;
     }
+  }
+  .darkmode-button {
+    position: relative;
+    left: 475px;
+    bottom: 10px;
+    height: 24px;
+    width: 24px;
   }
   .nav-items .close-nav-icon {
     display: none;
@@ -59,7 +66,7 @@ export const NavStyles = styled.nav`
     .nav-items {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: ${props => props.darkMode ? 'var(--dark-accent-3)' : 'var(--light-accent-3)'};
       padding: 2rem;
       width: 100%;
       border-radius: 12px;
@@ -78,6 +85,12 @@ export const NavStyles = styled.nav`
       li {
         display: block;
         margin-bottom: 1rem;
+      }
+      .darkmode-button {
+        position: absolute;
+        top: 8%;
+        left: 8%;
+        height: 30px;
       }
     }
   }

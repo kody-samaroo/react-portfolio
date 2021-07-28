@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const BlogStyles = styled.div`
     padding: 1rem;
+    background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
     h2 {
+        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
         display: block;
         margin: auto;
         text-align: center;
@@ -42,13 +44,13 @@ export const BlogStyles = styled.div`
         position: absolute;
         height: 50px;
         width: 50px;
-        background: var(--deep-dark);
+        background: ${props => props.darkMode ? 'var(--dark-accent-1)' : '#0049FF'};
         z-index: 10;
         right: 60px;
         left: auto;
         top: 0;
         transform: translateY(50%);
-        color: var(--gray-1);
+        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--dark-text-1)'};
         border-radius: 8px;
     }
     .swiper-button-next {

@@ -8,20 +8,27 @@ import Footer from "./Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+  function handleToggle() {
+    setDarkMode(!darkMode);
+  }
 
   return (
-    <div className="app" style={{ backgroundColor: "#262626"}}>
-      <Navbar darkMode={darkMode}/>
-      <Home />
+    <div className="app" style={darkMode ? {backgroundColor: "var(--dark-bg)"} : {backgroundColor: "var(--light-bg)"} }>
+      <Navbar 
+        darkMode={darkMode}
+        handleToggle={handleToggle}
+      />
+      <Home darkMode={darkMode}/>
       <br/>
-      <Blogs />
+      <Blogs darkMode={darkMode}/>
       <br/>
-      <Projects />
+      <Projects darkMode={darkMode}/>
       <br/>
-      <Contact />
+      <Contact darkMode={darkMode}/>
       <br/>
-      <Footer />
+      <Footer darkMode={darkMode}/>
     </div>
   );
 }

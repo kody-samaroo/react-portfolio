@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { ContactStyles } from '../styles/ContactStyles';
 
-export default function Contact() {
+export default function Contact({ darkMode }) {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
@@ -33,7 +33,7 @@ export default function Contact() {
     }
 
     return (
-        <ContactStyles>
+        <ContactStyles darkMode={darkMode}>
             <div className="contact">
                 <h2> Contact </h2>
                 <br/>
@@ -69,7 +69,7 @@ export default function Contact() {
                         </div>
                         <Button 
                             onClick={handleSubmit}
-                            className="btn-light btn-lg"
+                            className={darkMode ? 'btn-light btn-lg' : 'btn-primary btn-lg'}
                             type="submit"
                         > Send 
                         </Button>

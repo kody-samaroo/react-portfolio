@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 
-export default function Blogs() {
+export default function Blogs({ darkMode }) {
 
     SwiperCore.use([Navigation]);
 
@@ -50,7 +50,7 @@ export default function Blogs() {
     ]
 
     return (
-        <BlogStyles>
+        <BlogStyles darkMode={darkMode}>
         <div className="blogs">
             <h2> Blogs </h2>
             <div className="blog-items">
@@ -63,6 +63,7 @@ export default function Blogs() {
                     return (
                         <SwiperSlide key={blog.id}>
                             <BlogItem
+                                darkMode={darkMode}
                                 title={blog.title}
                                 img={blog.img}
                                 desc={blog.desc}

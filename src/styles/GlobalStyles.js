@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
-// ${props => !props.primary ? 'var(--dark-bg)' : 'var(--cream)'}
 const GlobalStyles = createGlobalStyle`
 *{
     padding: 0;
@@ -10,22 +8,16 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --light-bg: #F3F3F3;
-    --light-text-1: 1D1C1C;
+    --light-text-1: #1D1C1C;
     --light-accent-1: #AEA8A8;
     --light-accent-2: #000;
     --light-accent-3: #FFF;
     
     --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
-    --white: white;
-    --black: black;
-
     --dark-text-1: #BCB4B4;
     --dark-accent-1: #1E1E1E;
     --dark-accent-2: #FFF;
     --dark-accent-3: #000;
-
   }
   html{
     font-size: 10px;

@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const ContactStyles = styled.div`
     padding: 1rem;
+    background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
     h2 {
+        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
         display: block;
         margin: auto;
         text-align: center;
@@ -22,7 +24,7 @@ export const ContactStyles = styled.div`
         content: '';
         width: 2px;
         height: 50%;
-        background-color: var(--gray-1);
+        background-color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
         left: 50%
         top: 30%;
         transform: translate(-50%, -50%);
@@ -50,13 +52,14 @@ export const ContactStyles = styled.div`
     }
     label {
         font-size: 1.8rem;
+        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
     }
     input, textarea {
         width: 100%;
         font-size: 2rem;
         padding: 1.2rem;
-        color: var(--gray-1);
-        background-color: var(--deep-dark);
+        color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        background-color: ${props => !props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
         outline: none;
         border: none;
         border-radius: 8px;

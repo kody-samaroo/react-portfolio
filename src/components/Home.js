@@ -5,14 +5,14 @@ import { AiFillMediumCircle } from 'react-icons/ai'
 import { HomeStyles } from '../styles/HomeStyles';
 import { Button } from 'react-bootstrap';
 
-export default function Home() {
+export default function Home({ darkMode }) {
 
     function downloadCV(){
         window.open(resume)
     }
 
     return (
-        <HomeStyles>
+        <HomeStyles darkMode={darkMode}>
             <div className="home">
                 <img className="home-img" src="https://avatars.githubusercontent.com/u/73686621?v=4" alt="Profile"/>
 
@@ -53,7 +53,7 @@ export default function Home() {
 
             <div className="home-buttons">
                 <Button 
-                    className="btn-dark btn-lg"
+                    className={darkMode ? 'btn-light btn-lg': 'btn-primary btn-lg'}
                     onClick={downloadCV}
                 > Download CV 
                 </Button>
