@@ -24,6 +24,16 @@ export default function Projects({ darkMode }) {
         },
         {
             id: uniqid(),
+            title: 'TypeScript Weather App',
+            stack: ['TypeScript', 'React', 'Web Scrapping'],
+            desc: 'Search for weather data and forecast for cities in the US. Webscrapping Openweather API',
+            img: 'https://user-images.githubusercontent.com/73686621/129249752-59e859ae-1cd9-464a-97df-fe31b23b08c2.png',
+            github: 'https://github.com/jodycola/TypeScript-Weather-App',
+            website: 'https://typescript-weather.netlify.app/',
+            demo: null
+        },
+        {
+            id: uniqid(),
             title: 'Java Tic-Tac-Toe',
             stack: ['Java', 'JavaFX', 'Apache NetBeans'],
             desc: 'A Tic-Tac-Toe game application',
@@ -31,17 +41,6 @@ export default function Projects({ darkMode }) {
             github: 'https://github.com/jodycola/java-tic-tac-toe',
             website: null,
             demo: null
-        },
-        {
-            id: uniqid(),
-            title: 'TypeScript Weather App',
-            stack: ['TypeScript', 'Web Scrapping'],
-            desc: 'Search for weather data and forecast for cities in the US.',
-            img: 'https://user-images.githubusercontent.com/73686621/123458632-447f7c80-d5b3-11eb-8efe-c080ce64c58a.png',
-            github: 'https://github.com/jodycola/TypeScript-Weather-App',
-            website: 'https://typescript-weather-app.herokuapp.com/',
-            demo: null
-
         },
         {
             id: uniqid(),
@@ -66,6 +65,7 @@ export default function Projects({ darkMode }) {
 
     ]
 
+
     return (
         <ProjectStyles darkMode={darkMode}>
         <div className="projects">
@@ -85,7 +85,7 @@ export default function Projects({ darkMode }) {
                                 desc={project.desc}
                                 img={project.img}
                                 github={project.github}
-                                webstie={project.website}
+                                website={project.website}
                                 demo={project.demo}
                                 darkMode={darkMode}
                             />

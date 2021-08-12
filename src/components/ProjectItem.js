@@ -1,7 +1,6 @@
 import React from 'react';
 import { ProjectItemStyles } from '../styles/ProjectItemStyles'
-import { AiOutlinePlayCircle, AiFillGithub } from 'react-icons/ai'
-import { RiExternalLinkLine } from 'react-icons/ri'
+import { AiOutlinePlayCircle, AiFillGithub, AiOutlineLink } from 'react-icons/ai'
 
 
 export default function BlogItem({ title, img, desc, stack, github, website, demo, darkMode }) {
@@ -16,8 +15,8 @@ export default function BlogItem({ title, img, desc, stack, github, website, dem
             <div className="project-item-info">
                 <h3 className="project-item-title">{title}</h3>
                 <h4 className="project-links">
+                    { website ? <AiOutlineLink onClick={() => window.open(`${website}`)}/> : null }
                     { demo ? <AiOutlinePlayCircle onClick={() => window.open(`${demo}`)}/> : null } 
-                    { website ? <RiExternalLinkLine onClick={() => window.open(`${website}`)}/> : null }
                     { github ? <AiFillGithub style={{ color: 'red' }} onClick={() => window.open(`${github}`)}/> : null } 
                 </h4>
                 <h5> {renderStack} </h5>
