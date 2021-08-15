@@ -14,6 +14,13 @@ export default function Blogs({ darkMode }) {
     const blogs = [
         {
             id: uniqid(),
+            title: 'React & Rails - Action Cable - Real-time chat application',
+            desc: 'Learn to build a real-time chat application using React, Rails and ActionCable',
+            img: 'https://miro.medium.com/max/499/1*dycDToeldyET2w-UvOAQKQ.jpeg',
+            link: 'https://kodysamaroo.medium.com/learn-action-cable-and-react-by-building-a-real-time-messaging-application-9e4c15a5d913'
+        },
+        {
+            id: uniqid(),
             title: 'Java — Access Modifiers — Public, Private, Protected & Default',
             desc: 'Use Access Modifiers in your next Java project or application to control data flow and regulate classes',
             img: 'https://developers.redhat.com/sites/default/files/blog/2014/09/java-icon-240c2a0c397c2a0171.jpeg',
