@@ -1,15 +1,9 @@
 import React from 'react';
-import resume from '../assets/resume.pdf';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiFillMediumCircle } from 'react-icons/ai'
 import { HomeStyles } from '../styles/HomeStyles';
-import { Button } from 'react-bootstrap';
 
 export default function Home({ darkMode }) {
-
-    function downloadCV(){
-        window.open(resume)
-    }
 
     return (
         <HomeStyles darkMode={darkMode}>
@@ -40,24 +34,12 @@ export default function Home({ darkMode }) {
             </div>
 
             <br/>
-            <br/>
-            <br/>
 
             <div className="home-about">
-                Full stack software engineer with a background in data analytics, informatics and big data. 
-                I am a passionate programmer looking to find simple solutions to solve complex problems.
+            Full Stack Software Engineer proficient in JavaScript, React and Ruby frameworks with a background study in  Information Technology, Data Analytics and Data Management. I am a competent team member able to shine in any role and empower the team members around me. I am motivated to use new technologies to find simple solutions to solve complex problems. 
             </div>
 
             <br/>
-            <br/>
-
-            <div className="home-buttons">
-                <Button 
-                    className={darkMode ? 'btn-light btn-lg': 'btn-primary btn-lg'}
-                    onClick={downloadCV}
-                > Download CV 
-                </Button>
-            </div>
 
         </HomeStyles>
     )

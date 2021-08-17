@@ -24,6 +24,16 @@ export default function Projects({ darkMode }) {
         },
         {
             id: uniqid(),
+            title: 'Chatroom',
+            stack: ['Ruby on Rails', 'Action Cable', 'React', 'Styled-Components, Redis'],
+            desc: 'A messaging application where users can send and receive messages in real time',
+            img: 'https://user-images.githubusercontent.com/73686621/129642799-d1f066e7-83fa-482a-95df-9804f16e658d.png',
+            github: 'https://github.com/jodycola/Let-s-Chat',
+            website: null,
+            demo: 'https://youtu.be/fHikvpwC8KU'
+        },
+        {
+            id: uniqid(),
             title: 'TypeScript Weather App',
             stack: ['TypeScript', 'React', 'Web Scrapping'],
             desc: 'Search for weather data and forecast for cities in the US. Webscrapping Openweather API',
