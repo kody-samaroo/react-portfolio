@@ -33,7 +33,7 @@ export const HomeStyles = styled.div`
     }
     .home-bio {
         position: absolute;
-        background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-bg-1)'};
+        background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-bg)'};
         top: 61%;
         left: 37%;
         max-height: 40px;
