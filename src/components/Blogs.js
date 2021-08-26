@@ -49,6 +49,20 @@ export default function Blogs({ darkMode }) {
         },
         {
             id: uniqid(),
+            title: 'Deploy Rails API to Heroku',
+            desc: 'How to deploy backends and APIs to Heroku',
+            img: 'https://miro.medium.com/max/1024/0*4fveuXuWP0k2k1xj.png',
+            link: 'https://kodysamaroo.medium.com/how-to-deploy-a-railsapi-to-heroku-9a86e9651833'
+        },
+        {
+            id: uniqid(),
+            title: 'React deploying on Netlify',
+            desc: 'How to deploy frontend applications to Netlify',
+            img: 'https://miro.medium.com/max/1300/0*oXxzCnJGoFErDsQ1.jpg',
+            link: 'https://kodysamaroo.medium.com/react-deploying-frontend-on-netlify-6a2737c4c5b5'
+        },
+        {
+            id: uniqid(),
             title: 'GitHub introudction',
             desc: 'An introduction to a couple helpful Git commands',
             img: 'https://cdn.uconnectlabs.com/wp-content/uploads/sites/46/2019/04/GitHub-Mark.png',
