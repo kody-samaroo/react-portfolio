@@ -44,26 +44,6 @@ export default function Projects({ darkMode }) {
         },
         {
             id: uniqid(),
-            title: 'Java Tic-Tac-Toe',
-            stack: ['Java', 'JavaFX', 'Apache NetBeans'],
-            desc: 'A Tic-Tac-Toe game application',
-            img: 'https://camo.githubusercontent.com/f7bec7627d81b1cbc006b07359cf19ba76cfdb2af0780813152071e65833abdc/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f45716c56415378525a46546a665a7479376d2f67697068792e676966?size=10',
-            github: 'https://github.com/jodycola/java-tic-tac-toe',
-            website: null,
-            demo: null
-        },
-        {
-            id: uniqid(),
-            title: 'Full-Stack Fantasy Basketball App',
-            stack: ['React', 'Ruby on Rails', 'PostgreSQL'],
-            desc: 'Draft players to form a fantasy basketball team. Uses NBA api to fetch player data',
-            img: 'https://user-images.githubusercontent.com/73686621/117356406-aeb45480-ae81-11eb-8958-d411ecdebff2.png',
-            github: 'https://github.com/jodycola/fantasy_all_star/blob/main/README.md',
-            website: null,
-            demo: 'https://youtu.be/ieK0PDujrnk'
-        },
-        {
-            id: uniqid(),
             title: 'My Messager',
             stack: ['React', 'NodeJS', 'React-Bootstrap'],
             desc: 'An instant messaging application that provides communication between multiple parties',
