@@ -14,6 +14,13 @@ export default function Blogs({ darkMode }) {
     const blogs = [
         {
             id: uniqid(),
+            title: 'Dysfunctional Directories: 5 tips for organizing a directory',
+            desc: '5 tips to organize your code',
+            img: 'https://miro.medium.com/max/1282/1*kOVFnICgW59JBenCrApwFw.jpeg',
+            link: 'https://kodysamaroo.medium.com/dysfunctional-directories-5-tips-for-organizing-a-directory-3816b15edc3d'
+        },
+        {
+            id: uniqid(),
             title: 'React & Rails - Action Cable - Real-time chat application',
             desc: 'Learn to build a real-time chat application using React, Rails and ActionCable',
             img: 'https://miro.medium.com/max/499/1*dycDToeldyET2w-UvOAQKQ.jpeg',
