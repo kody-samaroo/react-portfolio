@@ -87,7 +87,7 @@ export default function Blogs({ darkMode }) {
                     slidesPerView={1}
                     navigation
                 >
-                {blogs.map((blog, index) => {
+                {blogs.map((blog) => {
                     return (
                         <SwiperSlide key={blog.id}>
                             <BlogItem

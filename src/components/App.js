@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import Journeys from "./Journeys";
 import Blogs from "./Blogs";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -21,6 +22,8 @@ export default function App() {
         handleToggle={handleToggle}
       />
       <Home darkMode={darkMode}/>
+      <br/>
+      <Journeys darkMode={darkMode}/>
       <br/>
       <Blogs darkMode={darkMode}/>
       <br/>

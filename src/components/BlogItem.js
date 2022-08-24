@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogItemStyles } from '../styles/BlogItemStyles'
+import { BlogItemStyles } from '../styles/BlogItemStyles';
 
 export default function BlogItem({ title, img, desc, link, darkMode }) {
 
