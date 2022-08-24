@@ -4,7 +4,6 @@ import Home from "./Home";
 import Journeys from "./Journeys";
 import Blogs from "./Blogs";
 import Projects from "./Projects";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,8 +27,6 @@ export default function App() {
       <Blogs darkMode={darkMode}/>
       <br/>
       <Projects darkMode={darkMode}/>
-      <br/>
-      <Contact darkMode={darkMode}/>
       <br/>
       <Footer darkMode={darkMode}/>
     </div>
