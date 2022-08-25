@@ -46,22 +46,22 @@ export const ProjectStyles = styled.div`
 
     .swiper-button-prev, .swiper-button-next {
         position: absolute;
-        height: 50px;
-        width: 50px;
+        right: 40px;
+        left: auto;
+        top: 20px;
+        height: 30px;
+        width: 30px;
         background: ${props => props.darkMode ? 'var(--dark-accent-1)' : '#0049FF'};
         z-index: 10;
-        right: 60px;
-        left: auto;
-        top: 0;
         transform: translateY(50%);
         color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--dark-text-1)'};
-        border-radius: 8px;
+        border-radius: 10px;
     }
     .swiper-button-next {
         right: 0;
     }
     .swiper-button-prev::after, .swiper-button-next::after {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     @media only screen and (max-width: 768px) {
         .project-items {

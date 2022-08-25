@@ -34,7 +34,7 @@ export default function Journeys({ darkMode }) {
             <h2> Work Experience </h2>
             <div className="journey-items">
                 <Swiper
-                    spaceBetween={30}
+                    spaceBetween={10}
                     slidesPerView={1}
                     navigation
                 >

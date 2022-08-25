@@ -14,8 +14,8 @@ export const JourneyItemStyles = styled.div`
         padding: 1rem;
         border-radius: 12px;
     }
-    .journey-links {
-        font-size: 1.2rem;
+    .journey-item-date {
+        font-size: 1.6rem;
     }
     .journey-item-title {
         color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
