@@ -17,7 +17,7 @@ export default function Journeys({ darkMode }) {
             company: 'Dun & Bradstreet',
             img: 'https://peprofessional.com/wp-content/uploads/2021/08/d-and-b-f1-1024x770.png',
             date: '09/21 - 08/22',
-            desc: 'This was my first software engineering role and it taught me a lot. I was responsible for intergrating microservices and building rest apis. I wrote code in Javascript and Java, observed the health of customer environments and worked with other teams to release a live web application for our customers to use.'
+            desc: 'I worked as a software engineer for Dun & Bradstreet for a year. I specialized in automating and intergrated microservices. I built apis, troubleshooted customer issues and wrote code for complex JSON objects. My time there taught me a lot about cloud based technologies, agilie idealogies and versioning control.'
         },
         {
             id: uniqid(),
