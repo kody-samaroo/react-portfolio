@@ -18,12 +18,13 @@ export const HomeStyles = styled.div`
     .home-name {
         position: absolute;
         background-color: ${props => props.darkMode ? 'var(--dark-accent-2)' : '#0049FF'};
-        top: 50%;
+        top: 65%;
         left: 35%;
         max-height: 50px;
         width: 40%;
         max-width: 250px;
         overflow: hidden;
+        border: 2px solid ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
         p {
             display: inline-block;
             color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-accent-3)'};
@@ -34,12 +35,13 @@ export const HomeStyles = styled.div`
     .home-bio {
         position: absolute;
         background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-bg)'};
-        top: 61%;
+        top: 76%;
         left: 37%;
         max-height: 40px;
         width: 50%;
         max-width: 300px;
         overflow: hidden;
+        border: 2px solid ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
         p {
             display: inline-block;
             color: ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};

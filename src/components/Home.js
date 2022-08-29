@@ -1,5 +1,6 @@
 import React from 'react';
 import resume from '../assets/resume.pdf';
+import profile from '../assets/pfp.jpeg';
 import { Button } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiFillMediumCircle } from 'react-icons/ai'
@@ -14,7 +15,7 @@ export default function Home({ darkMode }) {
     return (
         <HomeStyles darkMode={darkMode}>
             <div className="home">
-                <img className="home-img" src="https://avatars.githubusercontent.com/u/73686621?v=4" alt="Profile"/>
+                <img className="home-img" src={profile} alt="Profile"/>
 
                 <div className="home-name">
                     <p> Kody Samaroo </p>
