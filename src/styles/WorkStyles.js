@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const JourneyStyles = styled.div`
+export const WorkStyles = styled.div`
     padding: 1rem;
     background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
     h2 {
@@ -18,7 +18,7 @@ export const JourneyStyles = styled.div`
         font-size: 3.6rem;
     }
 }
-    .journey-item-img {
+    .work-item-img {
         text-align: center;
         max-height: 300px;
         max-width: 500px;
@@ -28,7 +28,7 @@ export const JourneyStyles = styled.div`
         width: 100%;
         height: 100%;
     }
-    .journey-items {
+    .work-items {
         display: block;
         margin: auto;
         gap: 3rem;
@@ -57,7 +57,7 @@ export const JourneyStyles = styled.div`
         font-size: 1.2rem;
     }
     @media only screen and (max-width: 768px) {
-        .journey-items {
+        .work-items {
             flex-direction: column;
             max-width: 400px;
             margin: 0 auto;

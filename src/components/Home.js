@@ -43,7 +43,7 @@ export default function Home({ darkMode }) {
             <br/>
 
             <div className="home-about">
-            Full Stack Software Engineer proficient in JavaScript, React and Ruby frameworks with a background study in  Information Technology, Data Analytics and Data Management. I am a competent team member able to shine in any role and empower the team members around me. I am motivated to use new technologies to find simple solutions to solve complex problems. 
+            A software engineer proficient in JavaScript, React and Ruby frameworks with a background study in  information technology, data analytics and data management. I am a competent team member able to shine in any role and empower other team members around me. I am motivated to use new technologies to find simple solutions to solve complex problems.
             </div>
 
             <br/>

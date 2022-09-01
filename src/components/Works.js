@@ -1,6 +1,6 @@
 import React from 'react';
-import JourneyItem from './JourneyItem';
-import { JourneyStyles } from '../styles/JourneyStyles';
+import WorkItem from './WorkItem';
+import { WorkStyles } from '../styles/WorkStyles';
 import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
@@ -11,7 +11,7 @@ export default function Journeys({ darkMode }) {
 
     var uniqid = require('uniqid');
 
-    const journeys = [
+    const works = [
         {
             id: uniqid(),
             company: 'Dun & Bradstreet',
@@ -29,24 +29,24 @@ export default function Journeys({ darkMode }) {
     ]
 
     return (
-        <JourneyStyles darkMode={darkMode}>
-        <div className="journey">
+        <WorkStyles darkMode={darkMode}>
+        <div className="work">
             <h2> Work Experience </h2>
-            <div className="journey-items">
+            <div className="work-items">
                 <Swiper
                     spaceBetween={10}
                     slidesPerView={1}
                     navigation
                 >
-                {journeys.map((journey) => {
+                {works.map((work) => {
                     return (
-                        <SwiperSlide key={journey.id}>
-                            <JourneyItem
+                        <SwiperSlide key={work.id}>
+                            <WorkItem
                                 darkMode={darkMode}
-                                company={journey.company}
-                                img={journey.img}
-                                date={journey.date}
-                                desc={journey.desc}
+                                company={work.company}
+                                img={work.img}
+                                date={work.date}
+                                desc={work.desc}
                             />
                         </SwiperSlide>
                     );
@@ -54,6 +54,6 @@ export default function Journeys({ darkMode }) {
                 </Swiper>
             </div>
         </div>
-        </JourneyStyles>
+        </WorkStyles>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Home from "./Home";
-import Journeys from "./Journeys";
+import Works from "./Works";
 import Blogs from "./Blogs";
 import Projects from "./Projects";
 import Footer from "./Footer";
@@ -22,7 +22,7 @@ export default function App() {
       />
       <Home darkMode={darkMode}/>
       <br/>
-      <Journeys darkMode={darkMode}/>
+      <Works darkMode={darkMode}/>
       <br/>
       <Blogs darkMode={darkMode}/>
       <br/>
