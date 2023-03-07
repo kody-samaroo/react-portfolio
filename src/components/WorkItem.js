@@ -1,9 +1,9 @@
 import React from 'react';
 import { WorkItemStyles } from '../styles/WorkItemStyles';
 
-export default function JourneyItem({ darkMode, company, img, date, desc }) {
+export default function JourneyItem({ company, img, date, desc }) {
   return (
-    <WorkItemStyles darkMode={darkMode}>
+    <WorkItemStyles>
         <img className="work-item-img" src={img} alt="work-preview"/>
         <div className="work-item-info">
             <h3 className="work-item-title">{company}</h3>

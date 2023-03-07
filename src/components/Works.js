@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 
-export default function Journeys({ darkMode }) {
+export default function Journeys() {
 
     SwiperCore.use([Navigation]);
 
@@ -29,7 +29,7 @@ export default function Journeys({ darkMode }) {
     ]
 
     return (
-        <WorkStyles darkMode={darkMode}>
+        <WorkStyles>
         <div className="work">
             <h2> Work Experience </h2>
             <div className="work-items">
@@ -42,7 +42,6 @@ export default function Journeys({ darkMode }) {
                     return (
                         <SwiperSlide key={work.id}>
                             <WorkItem
-                                darkMode={darkMode}
                                 company={work.company}
                                 img={work.img}
                                 date={work.date}

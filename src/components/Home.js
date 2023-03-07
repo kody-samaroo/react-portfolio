@@ -6,14 +6,14 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiFillMediumCircle } from 'react-icons/ai'
 import { HomeStyles } from '../styles/HomeStyles';
 
-export default function Home({ darkMode }) {
+export default function Home() {
 
     function downloadCV(){
         window.open(resume)
     }
 
     return (
-        <HomeStyles darkMode={darkMode}>
+        <HomeStyles>
             <div className="home">
                 <img className="home-img" src={profile} alt="Profile"/>
 
@@ -50,7 +50,6 @@ export default function Home({ darkMode }) {
 
             <div className="home-buttons">
                 <Button 
-                    className={darkMode ? 'btn-light btn-lg': 'btn-primary btn-lg'}
                     onClick={downloadCV}
                 > Download CV 
                 </Button>

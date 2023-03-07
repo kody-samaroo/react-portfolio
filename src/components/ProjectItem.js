@@ -3,14 +3,14 @@ import { ProjectItemStyles } from '../styles/ProjectItemStyles'
 import { AiOutlinePlayCircle, AiFillGithub, AiOutlineLink } from 'react-icons/ai'
 
 
-export default function BlogItem({ title, img, desc, stack, github, website, demo, darkMode }) {
+export default function BlogItem({ title, img, desc, stack, github, website, demo }) {
 
     const renderStack = stack.map((language) => {
         return `${language} `
     })
 
     return (
-        <ProjectItemStyles darkMode={darkMode}>
+        <ProjectItemStyles>
             <img className="project-item-img" src={img} alt="project-preview"/>
             <div className="project-item-info">
                 <h3 className="project-item-title">{title}</h3>

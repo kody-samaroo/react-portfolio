@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { NavStyles } from '../styles/NavStyles';
 import { NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
-import { FaRegLightbulb as On, FaLightbulb as Off} from 'react-icons/fa';
 
-export default function Navbar({ darkMode, handleToggle }) {
+export default function Navbar() {
     const [showNav, setShowNav] = useState(true)
 
     function scrollToSection(value) {
@@ -16,7 +15,7 @@ export default function Navbar({ darkMode, handleToggle }) {
 
 
     return (
-        <NavStyles darkMode={darkMode}>
+        <NavStyles>
         <div 
             className="mobile-menu-icon"
             role="button"
@@ -79,18 +78,6 @@ export default function Navbar({ darkMode, handleToggle }) {
                 >
                     Contact
                 </NavLink>
-            </li>
-
-            <li 
-                className="darkmode-button"
-                onClick={handleToggle}
-            >
-            {darkMode ?
-            <On />
-            :
-            <Off />
-            }
-
             </li>
         </ul>
         </NavStyles>

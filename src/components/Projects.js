@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 
-export default function Projects({ darkMode }) {
+export default function Projects() {
 
     SwiperCore.use([Navigation]);
 
@@ -57,7 +57,7 @@ export default function Projects({ darkMode }) {
 
 
     return (
-        <ProjectStyles darkMode={darkMode}>
+        <ProjectStyles>
         <div className="projects">
             <h2> Projects </h2>
             <div className="project-items">
@@ -77,7 +77,6 @@ export default function Projects({ darkMode }) {
                                 github={project.github}
                                 website={project.website}
                                 demo={project.demo}
-                                darkMode={darkMode}
                             />
                         </SwiperSlide>
                     );
