@@ -48,7 +48,7 @@ export default function Home() {
 
                 <div className="home-buttons">
                     <Button
-                        class="btn btn-outline-light"
+                        class="btn btn-dark btn-outline-light"
                         onClick={downloadCV}
                     > View Resume
                     </Button>
