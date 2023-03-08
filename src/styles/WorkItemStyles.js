@@ -6,11 +6,11 @@ export const WorkItemStyles = styled.div`
         height: 300px;
         border-radius: 12px;
         display: inline-block;
-        border: 3px solid ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};
+        border: 3px solid var(--accent-color-2);
     }
     .work-item-info {
         margin-top: 1rem;
-        background-color: ${props => !props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
+        background-color: var(--bg-color);
         padding: 1rem;
         border-radius: 12px;
     }
@@ -18,10 +18,10 @@ export const WorkItemStyles = styled.div`
         font-size: 1.6rem;
     }
     .work-item-title {
-        color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        color: var(--text-color);
     }
     .work-item-desc {
-        color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        color: var(--text-color);
         font-size: 1.6rem;
         font-family: 'Times New Roman';
         margin-top: 1rem;

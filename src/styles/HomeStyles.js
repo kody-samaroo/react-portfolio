@@ -2,7 +2,14 @@ import styled from 'styled-components';
 
 export const HomeStyles = styled.div`
     .home {
-        background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
+        background-color: var(--bg-color);
+        position: relative;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .home-splash {
+        background-color: var(--bg-color);
         position: relative;
         width: 100%;
         text-align: center;
@@ -13,38 +20,38 @@ export const HomeStyles = styled.div`
         margin: 10rem;
         right: 20%;
         max-width: 250px;
-        border: 2px solid ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        border: 2px solid var(--text-color);
     }
     .home-name {
         position: absolute;
-        background-color: ${props => props.darkMode ? 'var(--dark-accent-2)' : '#0049FF'};
+        background-color: var(--accent-color-2);
         top: 65%;
         left: 35%;
         max-height: 50px;
         width: 40%;
         max-width: 250px;
         overflow: hidden;
-        border: 2px solid ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        border: 2px solid var(--text-color);
         p {
             display: inline-block;
-            color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-accent-3)'};
+            color: var(--accent-color-1);
             text-align: center;
             font-size: 36px;
         }
     }
     .home-bio {
         position: absolute;
-        background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : 'var(--light-bg)'};
+        background-color: var(--accent-color-1);
         top: 76%;
         left: 37%;
         max-height: 40px;
         width: 50%;
         max-width: 300px;
         overflow: hidden;
-        border: 2px solid ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        border: 2px solid var(--text-color);
         p {
             display: inline-block;
-            color: ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};
+            color: var(--accent-color-2);
             text-align: center;
             font-size: 28px;
         }
@@ -55,46 +62,46 @@ export const HomeStyles = styled.div`
         max-width: 200px;
         margin: auto;
         .github-icon {
+            height: 70%;
+            width: 70%;
             margin-right: 5px;
+            stroke-width: 5px;
+            fill: var(--accent-color-2);
         }
         .github-icon:hover {
-            border: 3px solid ${props => props.darkMode ? 'var(--dark-accent-2)' : '#0049FF'};
+            border: 3px solid var(--accent-color-2);
             border-radius: 50px;
         }
         .linkedin-icon {
+            height: 70%;
+            width: 70%;
             margin-right: 5px;
+            stroke-width: 5px;
+            fill: var(--accent-color-2);
         }
         .linkedin-icon:hover {
-            border: 3px solid ${props => props.darkMode ? 'var(--dark-accent-2)' : '#0049FF'};
-            border-radius: 15px;
-        }
-        .medium-icon {
-            margin-right: 5px;
-        }
-        .medium-icon:hover {
-            border: 3px solid ${props => props.darkMode ? 'var(--dark-accent-2)' : '#0049FF'};
-            border-radius: 50px;
+            border: 3px solid var(--accent-color-2);
+            border-radius: 10px;
         }
     }
 
     .home-about {
         display: flex;
-        background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
-        color: ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};
-        margin-left: 15%;
-        margin-right: 15%;
+        background-color: var(--bg-color);
+        color: var(--accent-color-2);
+        margin-left: 20%;
+        margin-right: 20%;
         text-align: center;
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .home-buttons {
-        background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
         text-align: center;
-        white-space: nowrap;
     }
     button {
-        font-size: 2rem;
-        border-radius: 8px;
+        font-size: 2.5rem;
+        border-width: 3px;
+        border-radius: 25px;
         cursor: pointer;
     }
 `;

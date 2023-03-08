@@ -7,21 +7,15 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --light-bg: #F3F3F3;
-    --light-text-1: #1D1C1C;
-    --light-accent-1: #AEA8A8;
-    --light-accent-2: #000;
-    --light-accent-3: #FFF;
-    
-    --dark-bg: #262626;
-    --dark-text-1: #BCB4B4;
-    --dark-accent-1: #1E1E1E;
-    --dark-accent-2: #FFF;
-    --dark-accent-3: #000;
+    --bg-color: #001055;
+    --text-color: #1D1C1C;
+    --accent-color-1: #AEA8A8;
+    --accent-color-2: #FFF;
+    --accent-color-3: #000;
   }
   html{
     font-size: 10px;
-    background-color: var(--dark-bg);
+    background-color: var(--bg-color);
   }
   ul,li{
     list-style: none;
@@ -36,6 +30,9 @@ const GlobalStyles = createGlobalStyle`
   }
   button{
     outline: none
+  }
+  .app{
+    background-color: var(--bg-color);
   }
   .container {
     max-width: 1200px;

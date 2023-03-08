@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const WorkStyles = styled.div`
     padding: 1rem;
-    background-color: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
+    background-color: var(--bg-color);
     h2 {
-        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+        color: var(--text-color);
         display: block;
         margin: auto;
         text-align: center;
@@ -44,10 +44,10 @@ export const WorkStyles = styled.div`
         top: 20px;
         height: 30px;
         width: 30px;
-        background: ${props => props.darkMode ? 'var(--dark-accent-1)' : '#0049FF'};
+        background: var(--bg-color);
         z-index: 10;
         transform: translateY(50%);
-        color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--dark-text-1)'};
+        color: var(--text-color);
         border-radius: 10px;
     }
     .swiper-button-next {

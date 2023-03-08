@@ -15,11 +15,11 @@ const GlobalFonts = createGlobalStyle`
   }
   html{
     font-family: 'Verdana';
-    color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+    color: var(--text-color);
   }
   *{
     font-family: 'Helvetica';
-    color: ${props => !props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+    color: var(--text-color);
   }
   h1,h2,h3,h4,h5,h6{
     font-family: 'Monaco'

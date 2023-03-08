@@ -7,7 +7,7 @@ export const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: ${props => props.darkMode ? 'var(--dark-bg)' : 'var(--light-bg)'};
+  background: var(--bg-color);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ export const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: ${props => props.darkMode ? 'var(--dark-accent-1)' : '#0049FF'};
+        background-color: var(--accent-color-1);
       }
     }
     a {
@@ -26,11 +26,11 @@ export const NavStyles = styled.nav`
       font-family: 'Georgia';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: ${props => props.darkMode ? 'var(--dark-text-1)' : 'var(--light-text-1)'};
+      color: var(--text-color);
       outline: none;
     }
     .active {
-      color: ${props => props.darkMode ? 'var(--dark-accent-2)' : 'var(--light-accent-2)'};
+      color: var(--accent-color-2);
     }
   }
   .mobile-menu-icon {
@@ -66,7 +66,7 @@ export const NavStyles = styled.nav`
     .nav-items {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: ${props => props.darkMode ? 'var(--dark-accent-3)' : 'var(--light-accent-3)'};
+      background-color: var(--accent-color-3);
       padding: 2rem;
       width: 100%;
       border-radius: 12px;
